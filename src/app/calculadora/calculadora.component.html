@@ -1,0 +1,54 @@
+<div class="container">
+    <!-- <h1 class="text-light"> Calculadora de multiplicação. </h1> -->
+    
+    <div class="container-calculadora-lg">
+
+        <!-- Display -->
+        <div class="row">
+            <div class="col-xs-12">
+                <input type="text" class="temp-input p-2" [value]="opAnteriorDisplay" disabled>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <!-- <button class="btn btn-primary w-100 p-0"> Calcular </button> -->
+                <input type="text" [value]="valorDisplayStr" class="display-input p-2" disabled>
+            </div>
+        </div>
+
+        <!-- Calculadora -->
+        <div class="row">
+            <div class="col-xs-12">
+                <button class=" col-btn text-center btn-outline btn" (click)="getSingleNum('7')"> <span class="">7</span> </button>
+                <button class=" col-btn text-center btn-outline btn" (click)="getSingleNum('8')"> <span class="">8</span> </button>
+                <button class=" col-btn text-center btn-outline btn" (click)="getSingleNum('9')"> <span class="">9</span> </button>
+                <button class=" col-btn text-center btn-outline btn" (click)="limparCntrls()"> C </button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <button class=" col-btn text-center btn-outline btn" (click)="getSingleNum('4')"> <span class="">4</span> </button>
+                <button class=" col-btn text-center btn-outline btn" (click)="getSingleNum('5')"> <span class="">5</span> </button>
+                <button class=" col-btn text-center btn-outline btn" (click)="getSingleNum('6')"> <span class="">6</span> </button>
+                <button class=" col-btn text-center btn-outline btn" (click)="onPressX()"> x </button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <button class=" col-btn text-center btn-outline btn" (click)="getSingleNum('1')"> <span class="">1</span> </button>
+                <button class=" col-btn text-center btn-outline btn" (click)="getSingleNum('2')"> <span class="">2</span> </button>
+                <button class=" col-btn text-center btn-outline btn" (click)="getSingleNum('3')"> <span class="">3</span> </button>
+                <button class=" col-btn text-center btn-outline btn" (click)="getSingleNum(',')"> <span class="">,</span> </button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <button class=" btn-zero text-center btn-outline btn" (click)="getSingleNum('0')"> <span class="">0</span> </button>
+                <button class=" btn-igual col-btn text-center btn-outline btn" (click)="calcular()"> <span class="">=</span> </button>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
